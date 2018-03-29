@@ -1,0 +1,50 @@
+@media(min-width: 768px) {
+  .container-1 {
+    display: flex;  /* display boxes side-by-side  */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* default align-items is 'stretch' */
+    /* flex-direction: column; */
+  }
+
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around;  */
+  }
+}
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-1 div, .container-2 div, .container-3 div {
+  border: 1px #CCC solid;
+  padding: 10px;
+}
+
+/* flex: 1 provides 3 even boxes when all have 'flex: 1'  */
+.box-1 {
+  /* flex: 1; */
+  flex: 2;  /* makes the column wider  */
+  order: 2;
+}
+.box-2 {
+  flex: 1;
+  order: 1;
+}
+.box-3 {
+  flex: 1;
+  order: 3;
+}
+
+.container-2-box {
+  flex-basis: 27%; /* same as 'width' */
+}
+
+.container-3-box {
+  flex-basis: 12%;
+}
